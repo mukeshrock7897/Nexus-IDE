@@ -1,6 +1,6 @@
 <div align="center">
 
-# Nexus IDE
+# Nexus IDE Developed By Mukesh Yadav
 
 ### AI-Native Desktop Code Editor & Autonomous Multi-Agent Development Environment
 
