@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" width="1200" height="540" fill="none">
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Segoe UI', Roboto, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace; }
+  </style>
+  <rect width="1200" height="540" rx="12" fill="#090D16" stroke="#1E293B" stroke-width="2"/>
+  <text x="36" y="44" fill="#F8FAFC" font-size="18" font-weight="700" class="sans">Nexus IDE — End-to-End Architecture &amp; Native macOS Runtime</text>
+  <text x="36" y="68" fill="#94A3B8" font-size="12" class="mono">Bundle ID: com.nexuside.desktop · Electron + React 19 + Monaco + Multi-Agent LangGraph + Hybrid RAG + macOS Keychain</text>
+
+  <!-- Layer 1: Desktop UI & Monaco Layer -->
+  <rect x="36" y="96" width="340" height="408" rx="10" fill="#0F172A" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="56" y="126" fill="#38BDF8" font-size="14" font-weight="700" class="sans">1. Native Desktop &amp; Editor Layer</text>
+  <rect x="56" y="144" width="300" height="64" rx="6" fill="#1E293B"/>
+  <text x="72" y="168" fill="#F8FAFC" font-size="12" font-weight="600" class="sans">Monaco Code Editor + Split Diff</text>
+  <text x="72" y="188" fill="#94A3B8" font-size="11" class="mono">IntelliSense · Inline AI (⌘K) · Ghost Text</text>
+
+  <rect x="56" y="222" width="300" height="64" rx="6" fill="#1E293B"/>
+  <text x="72" y="246" fill="#F8FAFC" font-size="12" font-weight="600" class="sans">Auto-Detected macOS Hardware</text>
+  <text x="72" y="266" fill="#10B981" font-size="11" class="mono">Apple Silicon (arm64) &amp; Intel (x64)</text>
+
+  <rect x="56" y="300" width="300" height="64" rx="6" fill="#1E293B"/>
+  <text x="72" y="324" fill="#F8FAFC" font-size="12" font-weight="600" class="sans">macOS Keychain &amp; App Support</text>
+  <text x="72" y="344" fill="#94A3B8" font-size="11" class="mono">AES-256-GCM · ~/Library/Application Support</text>
+
+  <rect x="56" y="378" width="300" height="104" rx="6" fill="#090D16" stroke="#1E293B"/>
+  <text x="72" y="402" fill="#38BDF8" font-size="11" font-weight="700" class="mono">Deliverables (release/mac/):</text>
+  <text x="72" y="422" fill="#CBD5E1" font-size="11" class="mono">• Nexus-IDE-macOS-arm64.dmg</text>
+  <text x="72" y="440" fill="#CBD5E1" font-size="11" class="mono">• Nexus-IDE-macOS-x64.dmg</text>
+  <text x="72" y="458" fill="#10B981" font-size="11" class="mono">• Unpacked Nexus IDE.app Bundle</text>
+
+  <!-- Layer 2: Backend Services & Security Governance -->
+  <rect x="430" y="96" width="340" height="408" rx="10" fill="#0F172A" stroke="#10B981" stroke-width="1.5"/>
+  <text x="450" y="126" fill="#10B981" font-size="14" font-weight="700" class="sans">2. Workspace, Git &amp; Security Core</text>
+
+  <rect x="450" y="144" width="300" height="72" rx="6" fill="#1E293B"/>
+  <text x="466" y="168" fill="#F8FAFC" font-size="12" font-weight="600" class="sans">Real Disk File System Service</text>
+  <text x="466" y="188" fill="#94A3B8" font-size="11" class="mono">CRUD · Atomic Snapshots · Path Guard</text>
+
+  <rect x="450" y="230" width="300" height="72" rx="6" fill="#1E293B"/>
+  <text x="466" y="254" fill="#F8FAFC" font-size="12" font-weight="600" class="sans">Integrated Terminal &amp; Risk Policy</text>
+  <text x="466" y="274" fill="#94A3B8" font-size="11" class="mono">strict | moderate | permissive sandbox</text>
+
+  <rect x="450" y="316" width="300" height="72" rx="6" fill="#1E293B"/>
+  <text x="466" y="340" fill="#F8FAFC" font-size="12" font-weight="600" class="sans">Real Git Repository Engine</text>
+  <text x="466" y="360" fill="#94A3B8" font-size="11" class="mono">status · stage · commit · branch · diff</text>
+
+  <rect x="450" y="402" width="300" height="80" rx="6" fill="#1E293B"/>
+  <text x="466" y="426" fill="#F8FAFC" font-size="12" font-weight="600" class="sans">Outbound Secret Redaction Filter</text>
+  <text x="466" y="446" fill="#34D399" font-size="11" class="mono">Scrubs API keys, JWTs &amp; PEM blocks</text>
+  <text x="466" y="464" fill="#94A3B8" font-size="11" class="mono">before any AI provider invocation</text>
+
+  <!-- Layer 3: AI Gateway, Multi-Agent & Hybrid RAG -->
+  <rect x="824" y="96" width="340" height="408" rx="10" fill="#0F172A" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="844" y="126" fill="#C084FC" font-size="14" font-weight="700" class="sans">3. Multi-Provider AI &amp; Agentic Engine</text>
+
+  <rect x="844" y="144" width="300" height="82" rx="6" fill="#1E293B"/>
+  <text x="860" y="168" fill="#F8FAFC" font-size="12" font-weight="600" class="sans">Unified AI Model Gateway</text>
+  <text x="860" y="188" fill="#38BDF8" font-size="11" class="mono">Gemini · OpenAI · Anthropic · Mistral</text>
+  <text x="860" y="206" fill="#94A3B8" font-size="11" class="mono">Groq · OpenRouter · Ollama Local</text>
+
+  <rect x="844" y="240" width="300" height="82" rx="6" fill="#1E293B"/>
+  <text x="860" y="264" fill="#F8FAFC" font-size="12" font-weight="600" class="sans">9 Specialized Coding Agents</text>
+  <text x="860" y="284" fill="#94A3B8" font-size="11" class="mono">Planner · Architect · Coding · Testing</text>
+  <text x="860" y="302" fill="#94A3B8" font-size="11" class="mono">Debugger · Reviewer · Docs · Security</text>
+
+  <rect x="844" y="336" width="300" height="72" rx="6" fill="#1E293B"/>
+  <text x="860" y="360" fill="#F8FAFC" font-size="12" font-weight="600" class="sans">Hybrid RAG &amp; AST Symbol Graph</text>
+  <text x="860" y="380" fill="#94A3B8" font-size="11" class="mono">Semantic Chunks + Lexical BM25 + AST</text>
+
+  <rect x="844" y="422" width="300" height="60" rx="6" fill="#1E293B"/>
+  <text x="860" y="446" fill="#F8FAFC" font-size="12" font-weight="600" class="sans">Model Context Protocol (MCP) Host</text>
+  <text x="860" y="466" fill="#10B981" font-size="11" class="mono">Filesystem · Git · SQLite · Postgres</text>
+</svg>
