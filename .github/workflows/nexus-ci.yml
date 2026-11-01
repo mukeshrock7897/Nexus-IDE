@@ -1,0 +1,33 @@
+name: Nexus IDE CI & Release Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify-and-test:
+    name: Typecheck, Unit Tests & Production Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Strict TypeScript Verification
+        run: npm run lint
+
+      - name: Execute Automated Vitest Suite
+        run: npm test
+
+      - name: Verify Production Bundle Build
+        run: npm run build

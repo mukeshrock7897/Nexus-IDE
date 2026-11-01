@@ -1,0 +1,27 @@
+#!/bin/bash
+# Nexus IDE — Native macOS Application Executable (com.nexuside.desktop)
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+DIR="$(cd "$(dirname "$0")" && pwd)"
+APP_PAYLOAD="$DIR/../Resources/app"
+APP_SUPPORT="$HOME/Library/Application Support/Nexus IDE"
+mkdir -p "$APP_SUPPORT/logs" "$APP_SUPPORT/workspaces" "$APP_SUPPORT/preferences"
+
+PYTHON_BIN=""
+if [ -x "/opt/homebrew/bin/python3" ]; then
+  PYTHON_BIN="/opt/homebrew/bin/python3"
+elif [ -x "/usr/local/bin/python3" ]; then
+  PYTHON_BIN="/usr/local/bin/python3"
+elif xcode-select -p >/dev/null 2>&1 && command -v python3 >/dev/null 2>&1; then
+  PYTHON_BIN="$(command -v python3)"
+fi
+
+if [ -n "$PYTHON_BIN" ]; then
+  exec "$PYTHON_BIN" "$APP_PAYLOAD/macos_server.py" >> "$APP_SUPPORT/logs/nexus.log" 2>&1
+else
+  URL="https://ais-pre-hdjuv2xk2icetxe7hbshxo-828131292610.asia-northeast1.run.app"
+  if [ -x "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" ]; then
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --app="$URL" --user-data-dir="$APP_SUPPORT/native-window-profile" --window-size=1480,920 --no-first-run >/dev/null 2>&1 &
+  else
+    open "$URL"
+  fi
+fi

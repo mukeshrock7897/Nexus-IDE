@@ -1,0 +1,83 @@
+{
+  "appName": "Nexus IDE",
+  "appId": "com.nexuside.desktop",
+  "version": "2.4.0",
+  "builtAt": "2026-11-01T12:24:13.564650Z",
+  "appBundlePath": "release/mac/Nexus IDE.app",
+  "signingStatus": "Ad-hoc Signed on Install (codesign --force --deep --sign -)",
+  "notarizationStatus": "Gatekeeper Quarantine Auto-Cleared via Terminal Unlocker",
+  "artifacts": [
+    {
+      "filename": "Nexus-IDE-macOS-arm64.dmg",
+      "path": "release/mac/Nexus-IDE-macOS-arm64.dmg",
+      "arch": "arm64",
+      "format": "dmg",
+      "sizeBytes": 901295,
+      "sizeFormatted": "880.2 KB",
+      "sha256": "c304f57c66417d1ca3d1df47beda4bc3cff3bf3c401bdb38766c622dae7d8eed",
+      "signingStatus": "Ad-hoc Signed on Install (codesign --force --deep --sign -)",
+      "notarizationStatus": "Gatekeeper Quarantine Auto-Cleared via Terminal Unlocker",
+      "downloadUrl": "/api/release/download/Nexus-IDE-macOS-arm64.dmg"
+    },
+    {
+      "filename": "Nexus-IDE-macOS-arm64.zip",
+      "path": "release/mac/Nexus-IDE-macOS-arm64.zip",
+      "arch": "arm64",
+      "format": "zip",
+      "sizeBytes": 881210,
+      "sizeFormatted": "860.6 KB",
+      "sha256": "3063709792484991266bfa317cb8011203ac333f03a624fed8f6032e5cd6a84a",
+      "signingStatus": "Ad-hoc Signed on Install (codesign --force --deep --sign -)",
+      "notarizationStatus": "Gatekeeper Quarantine Auto-Cleared via Terminal Unlocker",
+      "downloadUrl": "/api/release/download/Nexus-IDE-macOS-arm64.zip"
+    },
+    {
+      "filename": "Nexus-IDE-macOS-x64.dmg",
+      "path": "release/mac/Nexus-IDE-macOS-x64.dmg",
+      "arch": "x64",
+      "format": "dmg",
+      "sizeBytes": 901294,
+      "sizeFormatted": "880.2 KB",
+      "sha256": "a6cb4d9d12aa8844223a88a568fd5ed3764ba793c446c30c6444721d10354b7e",
+      "signingStatus": "Ad-hoc Signed on Install (codesign --force --deep --sign -)",
+      "notarizationStatus": "Gatekeeper Quarantine Auto-Cleared via Terminal Unlocker",
+      "downloadUrl": "/api/release/download/Nexus-IDE-macOS-x64.dmg"
+    },
+    {
+      "filename": "Nexus-IDE-macOS-x64.zip",
+      "path": "release/mac/Nexus-IDE-macOS-x64.zip",
+      "arch": "x64",
+      "format": "zip",
+      "sizeBytes": 881210,
+      "sizeFormatted": "860.6 KB",
+      "sha256": "3063709792484991266bfa317cb8011203ac333f03a624fed8f6032e5cd6a84a",
+      "signingStatus": "Ad-hoc Signed on Install (codesign --force --deep --sign -)",
+      "notarizationStatus": "Gatekeeper Quarantine Auto-Cleared via Terminal Unlocker",
+      "downloadUrl": "/api/release/download/Nexus-IDE-macOS-x64.zip"
+    },
+    {
+      "filename": "Nexus-IDE-Mac-Installer.command",
+      "path": "release/mac/Nexus-IDE-Mac-Installer.command",
+      "arch": "universal",
+      "format": "command",
+      "sizeBytes": 1176539,
+      "sizeFormatted": "1.12 MB",
+      "sha256": "4a8d333a766c21d85b241e26142224a1ee05964022c3ff4508867581e7565cf8",
+      "signingStatus": "Ad-hoc Signed on Install (codesign --force --deep --sign -)",
+      "notarizationStatus": "Gatekeeper Quarantine Auto-Cleared via Terminal Unlocker",
+      "downloadUrl": "/api/release/download/Nexus-IDE-Mac-Installer.command"
+    },
+    {
+      "filename": "SHA256SUMS.txt",
+      "path": "release/mac/SHA256SUMS.txt",
+      "arch": "universal",
+      "format": "sha256",
+      "sizeBytes": 462,
+      "sizeFormatted": "462 B",
+      "sha256": "3db192dd75a8d6b317cf30b92dee2669c90a4e4ddbadb0522d6f615b3e2e1388",
+      "signingStatus": "SHA-256 Checksum Manifest",
+      "notarizationStatus": "N/A",
+      "downloadUrl": "/api/release/download/SHA256SUMS.txt"
+    }
+  ]
+}

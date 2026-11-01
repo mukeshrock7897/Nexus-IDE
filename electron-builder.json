@@ -1,0 +1,77 @@
+{
+  "appId": "com.nexuside.desktop",
+  "productName": "Nexus IDE",
+  "copyright": "Copyright © 2026 Nexus IDE Contributors",
+  "asar": true,
+  "directories": {
+    "output": "release/mac",
+    "buildResources": "build"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "src/shared/**/*",
+    "src/server/**/*",
+    "server.ts",
+    "package.json"
+  ],
+  "protocols": [
+    {
+      "name": "Nexus IDE Deep Link",
+      "schemes": ["nexus"]
+    }
+  ],
+  "mac": {
+    "category": "public.app-category.developer-tools",
+    "icon": "build/icon.icns",
+    "artifactName": "Nexus-IDE-macOS-${arch}.${ext}",
+    "hardenedRuntime": true,
+    "gatekeeperAssess": false,
+    "entitlements": "build/entitlements.mac.plist",
+    "entitlementsInherit": "build/entitlements.mac.plist",
+    "minimumSystemVersion": "12.0",
+    "target": [
+      {
+        "target": "dmg",
+        "arch": ["arm64", "x64"]
+      },
+      {
+        "target": "zip",
+        "arch": ["arm64", "x64"]
+      }
+    ]
+  },
+  "dmg": {
+    "title": "Nexus IDE",
+    "artifactName": "Nexus-IDE-macOS-${arch}.dmg",
+    "window": {
+      "width": 540,
+      "height": 380
+    },
+    "contents": [
+      {
+        "x": 140,
+        "y": 200,
+        "type": "file"
+      },
+      {
+        "x": 400,
+        "y": 200,
+        "type": "link",
+        "path": "/Applications"
+      }
+    ]
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64", "arm64"]
+      }
+    ]
+  },
+  "linux": {
+    "target": ["AppImage", "deb"],
+    "category": "Development"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Nexus IDE",
+  "description": "AI-native desktop code editor and agentic development environment with Monaco editor, multi-provider AI gateway, integrated terminal, Git source control, and autonomous coding workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
